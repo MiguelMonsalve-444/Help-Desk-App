@@ -184,7 +184,7 @@ cp /mingw64/bin/libstdc++-6.dll build/
 
 ---
 
-### ❌ Los datos no se guardan (usuarios/tickets)
+###  Los datos no se guardan (usuarios/tickets)
 
 **Causa:** Directorio de trabajo incorrecto o falta carpeta `data/`
 
@@ -196,8 +196,8 @@ cp /mingw64/bin/libstdc++-6.dll build/
    ```
 
 2. **Asegurarte de ejecutar desde la raíz del proyecto:**
-   - ❌ NO hacer doble clic en `build\HelpDeskApp.exe`
-   - ✅ Usar `run.bat` o ejecutar desde PowerShell/MSYS2
+   -  NO hacer doble clic en `build\HelpDeskApp.exe`
+   -  Usar `run.bat` o ejecutar desde PowerShell/MSYS2
 
 3. Verificar estructura:
    ```
