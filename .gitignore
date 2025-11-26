@@ -1,0 +1,36 @@
+# Binarios y ejecutables
+*.exe
+*.out
+*.o
+*.obj
+*.dll
+
+# Carpeta de compilacion
+build/
+bin/
+
+# Archivos de datos 
+data/*.txt
+data/*.log
+
+# Mantener estructura de carpeta data 
+!data/.gitkeep
+
+# Visual Studio Code
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# Logs de compilacion
+*.log
+compile_output.txt
+
+# Archivos temporales
+*.tmp
+*.temp
+*~
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
