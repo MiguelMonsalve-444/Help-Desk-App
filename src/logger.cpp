@@ -1,4 +1,5 @@
 #include "logger.h"
+#include "security.h"
 #include <fstream>
 #include <iostream>
 #include <ctime>
@@ -27,7 +28,9 @@ void writeLog(const string &user, const string &action, const string &details){
         << setw(2) << setfill('0') << ltm->tm_min  << ";"
         << setw(2) << setfill('0') << ltm->tm_sec  << "]";
         
-    log << "User:" << user << "| action:" << action << "| details:" << details << "\n";
+    log << "User:" << preventCSVInjection(user) 
+        << "| action:" << preventCSVInjection(action) 
+        << "| details:" << preventCSVInjection(details) << "\n";
     log.close();
 
 }
